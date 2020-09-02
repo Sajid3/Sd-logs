@@ -146,6 +146,7 @@ window.onload = wrap_img;
 <p>Name : MSI GP65 Leopard 95D</p>
 <p>GPU  : Geforce GTX 16 SERIES</p>
 <p>OS   : UBUNTU 20.04</p>
+<p>Nvidia driver : 450</p>
 
 </div>
 </div>
@@ -158,7 +159,14 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="sudo-rm-/etc/apt/sources.list.d/cuda*">sudo rm /etc/apt/sources.list.d/cuda*<a class="anchor-link" href="#sudo-rm-/etc/apt/sources.list.d/cuda*"> </a></h2><h2 id="sudo-apt-remove---autoremove-nvidia-cuda-toolkit">sudo apt remove --autoremove nvidia-cuda-toolkit<a class="anchor-link" href="#sudo-apt-remove---autoremove-nvidia-cuda-toolkit"> </a></h2><h2 id="sudo-apt-remove---autoremove-nvidia-*">sudo apt remove --autoremove nvidia-*<a class="anchor-link" href="#sudo-apt-remove---autoremove-nvidia-*"> </a></h2><h2 id="sudo-apt-get-purge-nvidia*">sudo apt-get purge nvidia*<a class="anchor-link" href="#sudo-apt-get-purge-nvidia*"> </a></h2><h2 id="sudo-apt-get-autoremove">sudo apt-get autoremove<a class="anchor-link" href="#sudo-apt-get-autoremove"> </a></h2><h2 id="sudo-apt-get-autoclean">sudo apt-get autoclean<a class="anchor-link" href="#sudo-apt-get-autoclean"> </a></h2><h2 id="sudo-rm--rf-/usr/local/cuda*">sudo rm -rf /usr/local/cuda*<a class="anchor-link" href="#sudo-rm--rf-/usr/local/cuda*"> </a></h2>
+<p>sudo rm /etc/apt/sources.list.d/cuda*</p>
+<p>sudo apt remove --autoremove nvidia-cuda-toolkit</p>
+<p>sudo apt remove --autoremove nvidia-*</p>
+<p>sudo apt-get purge nvidia*</p>
+<p>sudo apt-get autoremove</p>
+<p>sudo apt-get autoclean</p>
+<p>sudo rm -rf /usr/local/cuda*</p>
+
 </div>
 </div>
 </div>
@@ -170,7 +178,15 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="sudo-apt-update">sudo apt update<a class="anchor-link" href="#sudo-apt-update"> </a></h2><h2 id="sudo-add-apt-repository-ppa:graphics-drivers">sudo add-apt-repository ppa:graphics-drivers<a class="anchor-link" href="#sudo-add-apt-repository-ppa:graphics-drivers"> </a></h2><h2 id="sudo-apt-key-adv---fetch-keys-http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub">sudo apt-key adv --fetch-keys <a href="http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub">http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub</a><a class="anchor-link" href="#sudo-apt-key-adv---fetch-keys-http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub"> </a></h2><h2 id="sudo-bash--c-'echo-&quot;deb-http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64-/&quot;-&gt;-/etc/apt/sources.list.d/cuda.list'">sudo bash -c 'echo "deb <a href="http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64">http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64</a> /" &gt; /etc/apt/sources.list.d/cuda.list'<a class="anchor-link" href="#sudo-bash--c-'echo-&quot;deb-http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64-/&quot;-&gt;-/etc/apt/sources.list.d/cuda.list'"> </a></h2><h2 id="sudo-bash--c-'echo-&quot;deb-http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64-/&quot;-&gt;-/etc/apt/sources.list.d/cuda_learn.list'">sudo bash -c 'echo "deb <a href="http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64">http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64</a> /" &gt; /etc/apt/sources.list.d/cuda_learn.list'<a class="anchor-link" href="#sudo-bash--c-'echo-&quot;deb-http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64-/&quot;-&gt;-/etc/apt/sources.list.d/cuda_learn.list'"> </a></h2><h2 id="sudo-apt-update">sudo apt update<a class="anchor-link" href="#sudo-apt-update"> </a></h2><h2 id="sudo-apt-install-cuda-11-0">sudo apt install cuda-11-0<a class="anchor-link" href="#sudo-apt-install-cuda-11-0"> </a></h2><h2 id="sudo-apt-install-libcudnn7-----or-8-its-your-choice">sudo apt install libcudnn7     or 8 its your choice<a class="anchor-link" href="#sudo-apt-install-libcudnn7-----or-8-its-your-choice"> </a></h2>
+<p>sudo apt update</p>
+<p>sudo add-apt-repository ppa:graphics-drivers</p>
+<p>sudo apt-key adv --fetch-keys <a href="http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub">http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub</a></p>
+<p>sudo bash -c 'echo "deb <a href="http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64">http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64</a> /" &gt; /etc/apt/sources.list.d/cuda.list'</p>
+<p>sudo bash -c 'echo "deb <a href="http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64">http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64</a> /" &gt; /etc/apt/sources.list.d/cuda_learn.list'</p>
+<p>sudo apt update</p>
+<p>sudo apt install cuda-11-0</p>
+<p>sudo apt install libcudnn7     or 8 its your choice</p>
+
 </div>
 </div>
 </div>
@@ -213,7 +229,12 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="NOTE-:--You-will-get-updates-on-your-software-updater.-Please-do-it.">NOTE :  You will get updates on your software updater. Please do it.<a class="anchor-link" href="#NOTE-:--You-will-get-updates-on-your-software-updater.-Please-do-it."> </a></h2><h2 id="Do-a-check-using-below-commands:">Do a check using below commands:<a class="anchor-link" href="#Do-a-check-using-below-commands:"> </a></h2><h2 id="nvidia-smi">nvidia-smi<a class="anchor-link" href="#nvidia-smi"> </a></h2><h2 id="nvcc--V">nvcc -V<a class="anchor-link" href="#nvcc--V"> </a></h2><h2 id="cat-/usr/lib/cuda/include/cudnn_version.h-|-grep-CUDNN_MAJOR--A-2">cat /usr/lib/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2<a class="anchor-link" href="#cat-/usr/lib/cuda/include/cudnn_version.h-|-grep-CUDNN_MAJOR--A-2"> </a></h2>
+<p>NOTE :  You will get updates on your software updater. Please do it.</p>
+<p>Do a check using below commands:</p>
+<p>nvidia-smi
+nvcc -V
+cat /usr/lib/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2</p>
+
 </div>
 </div>
 </div>
