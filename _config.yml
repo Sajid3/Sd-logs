@@ -6,7 +6,7 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
+title: Sajids Space
 description: An easy to use blogging platform with support for Jupyter Notebooks.
 github_username: Sajid3
 # you can comment the below line out if your repo name is not different than your baseurl
@@ -14,7 +14,8 @@ github_repo: "Sd-logs"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
-url: "https://Sajid3.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "https://Sajid3.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sajidali.xyz"
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
@@ -34,13 +35,14 @@ url: "https://Sajid3.github.io" # the base hostname & protocol for your site, e.
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/Sd-logs" # the subpath of your site, e.g. "/blog".
+#baseurl: "/Sd-logs" # the subpath of your site, e.g. "/blog".
+baseurl: ""
 
 # Github and twitter are optional:
 minima:
   social_links:
     twitter: fastdotai
-    github: fastai
+    github: sajid3
 
 # Set this to true to get LaTeX math equation support
 use_math: 
